@@ -1,0 +1,110 @@
+{% load static %}
+<html>
+<head>
+	
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src=" static 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Late
+st compiled JavaScript -->
+<script src="static 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="{%  static 'css\style-index.css' %}" rel="stylesheet" type="text/css">
+<link href="{% static 'css\contact.css' %}" rel="stylesheet" type="text/css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="{% static 'css\reservation.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+<link rel="stylesheet" href="{% static 'css/sign.css' %}">
+<link rel="stylesheet" href="{% static 'css/room.css' %}">
+</head>
+
+<body>
+
+<!--navbar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+   	  <a class="col-lg-3 col-xs-12 navbar-brand" href="#"><img src="{% static 'images\sky-logo-header.png' %}"></a>
+</a>
+    </div>
+    <ul class="nav navbar-nav">
+		<li><a href="\">Home</a></li>
+		<li><a href="About">About</a></li>
+		<li><a href="room">Rooms</a></li>
+		<li><a href="gallery">Gallery</a></li>
+		<li><a href="reserv">Reservation</a></li>
+		<li><a href="contact">Contact</a></li>
+		<li><a href="loggedin">Login</a></li>
+		<li><a href="signup">Signup</a></li>
+
+    </ul>
+  </div>
+</nav>
+{% block content %}
+
+{% endblock %}
+<!--Footer-->
+<div class="col-lg-12 footer">
+	<div class="container">
+	
+<!--part 1 logo-->
+		<div class="col-lg-3 col-xs-12 part1">
+			<center>
+				<img src="{% static 'images\sky-logo-footer.png' %}">
+			</center>
+		</div>
+
+<!--part-2 -->
+		<div class="col-lg-3 col-xs-12 part2">
+			<ul>
+			<h4>
+				<li><a href="#site map">Site Map</a></li>
+				<li><a href="#site map">Terms and conditions</a></li>
+				<li><a href="#site map">Privacy Policy </a></li>
+				<li><a href="#site map">Help</a></li>
+				<li><a href="#site map">Affiliate</a></li>
+			</h4>
+			</ul>
+		</div>
+
+<!--part-3-->
+		<div class="col-lg-3 col-xs-12 part3">
+			<ul>
+			<h4>
+				<li><a href="#site map">Our Location</a></li>
+				<li><a href="#site map">Career</a></li>
+				<li><a href="#site map">About Us </a></li>
+				<li><a href="#site map">Contact Us</a></li>
+			</h4>
+			</ul>
+		</div>
+
+
+<!--part-4-->
+		<div class="col-lg-3 col-xs-12 part4">
+			<ul>
+			<h4>
+				<li><a href="#site map">FAQs</a></li>
+				<li><a href="#site map">News</a></li>
+				<li><a href="#site map">Photo and Vedio </a></li>
+				<li><a href="#site map">Restaurant</a></li>
+				<li><a href="#site map">Gift Card</a></li>
+				
+			</h4>
+			</ul>
+		</div>
+
+
+	</div>
+</div>
+<!--Footer ends-->
+
+
+</body>
+
+<script src="{% static 'js/scripts.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
